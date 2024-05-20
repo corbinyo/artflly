@@ -1,0 +1,104 @@
+﻿{
+  "art": [
+    {
+      "artist": {
+        "firstName": "David",
+        "lastName": "French"
+      },
+      "artId": 1,
+      "token": "SP01",
+      "name": "St. Patrick",
+      "description": null,
+      "width": 60,
+      "height": 60,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/French_St.Patrick_60x60.JPG"
+    },
+    {
+      "artist": {
+        "firstName": "Jonathon",
+        "lastName": "Davenport"
+      },
+      "artId": 2,
+      "token": "BS01",
+      "name": "Blue Swimsuit",
+      "description": null,
+      "width": 30,
+      "height": 40,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Davenport_Blue Swimsuit_30x40.jpg"
+    },
+    {
+      "artist": {
+        "firstName": "Rachel",
+        "lastName": "Isadora"
+      },
+      "artId": 3,
+      "token": "IS01",
+      "name": "Isadora II",
+      "description": null,
+      "width": 30,
+      "height": 60,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Isadora_isadora ii_ 30 x 60.jpeg"
+    },
+    {
+      "artist": {
+        "firstName": "Rebecca",
+        "lastName": "Gottesman"
+      },
+      "artId": 4,
+      "token": "ML01",
+      "name": "Morning Light",
+      "description": null,
+      "width": 20,
+      "height": 20,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Gottesman_Morning Light_20x20-min.jpg"
+    },
+    {
+      "artist": {
+        "firstName": "Richard",
+        "lastName": "Feaster"
+      },
+      "artId": 5,
+      "token": "FK01",
+      "name": "Five of a Kind",
+      "description": null,
+      "width": 16,
+      "height": 20,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Feaster_Five of a Kind_20x16.jpg"
+    },
+    {
+      "artist": {
+        "firstName": "Tony",
+        "lastName": "Gill"
+      },
+      "artId": 6,
+      "token": "SH01",
+      "name": "St. Helena Sound",
+      "description": null,
+      "width": 23,
+      "height": 27,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Gill_St Helena Sound_27x23.jpg"
+    },
+    {
+      "artist": {
+        "firstName": "Vanessa",
+        "lastName": "Grebe"
+      },
+      "artId": 7,
+      "token": "RE01",
+      "name": "Ready (Framed in Gold)",
+      "description": null,
+      "width": 30,
+      "height": 40,
+      "mediaType": "media/jpeg",
+      "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Grebe_Ready_30x40.jpg"
+    }
+  ],
+  "success": true,
+  "message": null
+}

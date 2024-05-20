@@ -1,0 +1,83 @@
+﻿[
+{
+  "searchId": null,
+  "listings": [
+    {
+      "token": "TG01.SP01",
+      "price": 7000,
+      "listed": "2019-12-31T15:12:59.907",
+      "art": {
+        "artId": 1,
+        "token": "SP01",
+        "name": "St. Patrick",
+        "width": 60,
+        "height": 60,
+        "mediaType": "media/jpeg",
+        "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/French_St.Patrick_60x60.JPG",
+        "artist": {
+          "token": null,
+          "firstName": "David",
+          "lastName": "French"
+        }
+      },
+      "gallery": {
+        "name": "Trager Contemporary",
+        "token": null
+      },
+      "status": 0
+    },
+    {
+      "token": "TG01.BS01",
+      "price": 3500,
+      "listed": "2019-12-31T15:12:59.907",
+      "art": {
+        "artId": 2,
+        "token": "BS01",
+        "name": "Blue Swimsuit",
+        "width": 30,
+        "height": 40,
+        "mediaType": "media/jpeg",
+        "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Davenport_Blue Swimsuit_30x40.jpg",
+        "artist": {
+          "token": null,
+          "firstName": "Jonathon",
+          "lastName": "Davenport"
+        }
+      },
+      "gallery": {
+        "name": "Trager Contemporary",
+        "token": null
+      },
+      "status": 0
+    },
+    {
+      "token": "TG01.SH01",
+      "price": 3750,
+      "listed": "2019-12-31T15:12:59.907",
+      "art": {
+        "artId": 6,
+        "token": "SH01",
+        "name": "St. Helena Sound",
+        "width": 20,
+        "height": 24,
+        "mediaType": "media/jpeg",
+        "fullSizeImageUrl": "https://artarticulator.blob.core.windows.net/art/Gill_St Helena Sound_27x23.jpg",
+        "artist": {
+          "token": null,
+          "firstName": "Tony",
+          "lastName": "Gill"
+        }
+      },
+      "gallery": {
+        "name": "Trager Contemporary",
+        "token": null
+      },
+      "status": 0
+    }
+  ],
+  "artist": [],
+  "gallery": [],
+  "success": false,
+  "message": null
+}
+]

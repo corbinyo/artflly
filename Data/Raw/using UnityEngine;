@@ -1,0 +1,107 @@
+using UnityEngine;
+using System.Collections;
+using LitJson;
+using System.Collections.Generic;
+using UnityEngine.Networking;
+using System.IO;
+using System.Text;
+
+public class ItemDatabase_ : MonoBehaviour
+{
+    private List<Item> database = new List<Item>();
+
+    public JsonData itemData;
+
+
+    void Start()
+    {
+        StartCoroutine(GetText());
+
+    }
+
+    IEnumerator GetText()
+    {
+        UnityWebRequest webjson = UnityWebRequest.Get("https://artarticulatorapi.azurewebsites.net/buyer/sample");
+
+        yield return webjson.SendWebRequest();
+
+        if (webjson.isNetworkError || webjson.isHttpError)
+        {
+            Debug.Log(webjson.error);
+        }
+        else
+        {
+            itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Art_Brian.json"));
+            //itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Art_.json"));
+            // itemData = JsonMapper.ToObject(webjson.downloadHandler.text.Trim());
+            
+            Debug.Log(itemData);
+            Debug.Log(itemData.art.Count + "PAPAPPAPAAPA");
+
+        }
+    }
+
+    public Item FetchItemByID(int id)
+    {
+        for (int i = 0; i < database.Count; i++)
+            if (database[i].artId == id)  
+                return database[i];
+        
+        return null;
+    }
+
+    void ConstructItemDatabase()
+    {
+      
+        for (int i = 0; i < itemData.Count; i++)
+        {
+            database.Add(new Item(itemData[i]["artist"]["firstname"].ToString(), itemData[i]["artist"]["lastname"].ToString(), (int)itemData[i]["artid"],
+                itemData[i]["token"].ToString(), itemData[i]["name"].ToString(), (object)itemData[i]["description"], (int)itemData[i]["width"],
+                (int)itemData[i]["height"], itemData[i]["mediatype"].ToString(), itemData[i]["fullsizeimageurl"].ToString(), (bool)itemData[i]["success"],
+                (object)itemData[i]["message"]));
+
+           
+        }
+    }
+}
+
+public class Item
+{
+
+    public string firstName { get; set; }
+    public string lastName { get; set; }
+    public int artId { get; set; }
+    public string token { get; set; }
+    public string name { get; set; }
+    public object description { get; set; }
+    public int width { get; set; }
+    public int height { get; set; }
+    public string mediaType { get; set; }
+    public string fullSizeImageUrl { get; set; }
+    public bool success { get; set; }
+    public object message { get; set; }
+    public Sprite Sprite { get; set; }
+
+    public Item(string firstname, string lastname, int artid, string token, string name, object description,
+    int width, int height, string mediatype, string fullsizeimageurl, bool success, object message)
+    {
+        this.firstName = firstname;
+        this.lastName = lastname;
+        this.artId = artid;
+        this.token = token;
+        this.name = name;
+        this.description = description;
+        this.width = width;
+        this.height = height;
+        this.mediaType = mediatype;
+        this.fullSizeImageUrl = fullsizeimageurl;
+        this.success = success;
+        this.message = message;
+        this.Sprite = Resources.Load<Sprite>("fullSizeImageUrl");
+    }
+
+    public Item()
+    {
+        this.artId = -1;
+    }
+}

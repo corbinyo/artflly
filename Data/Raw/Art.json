@@ -1,0 +1,33 @@
+﻿{
+    "Items": [
+        {
+            "id": 0,
+            "ArtistName": "Jerry Seinfeld",
+            "PieceName": "What's the Deal?",
+            "Width": 5,
+            "Height": 8
+        },
+        {
+            "id": 1,
+            "ArtistName": "George Costanza",
+            "PieceName": "Summer Of George",
+            "Width": 5,
+            "Height": 3
+        },
+        {
+            "id": 2,
+            "ArtistName": "Elaine Benes",
+            "PieceName": "The Nipple",
+            "Width": 5,
+            "Height": 1
+        },
+        {
+            "id": 3,
+            "ArtistName": "Cosmo Kramer",
+            "PieceName": "Reggae Lounge ",
+            "Width": 6,
+            "Height": 3
+        }
+        
+    ]
+}

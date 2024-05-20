@@ -1,0 +1,69 @@
+﻿
+    {
+        "id": 0,
+        "title": "Vanessa Grebe_Lucky Seven_16x12",
+        "value": 6,
+        "stats": {
+            "width": 300,
+            "height": 450,
+            "length": 2
+        },
+
+        "description": "Vanessa Grebe_Lucky Seven_16x12",
+        "stackable": false,
+        "rarity": 2,
+        "slug": "Vanessa Grebe_Lucky Seven_16x12"
+    },
+
+    {
+        "id": 1,
+        "title": "Tony Gill_Bull's Bay_30x40",
+        "value": 500,
+        "stats": {
+            "width": 502.5,
+            "height": 400,
+            "length": 2
+        },
+        "description": "Tony Gill_Bull's Bay_30x40",
+        "stackable": true,
+        "rarity": 6,
+        "slug": "Tony Gill_Bull's Bay_30x40"
+    },
+
+    {
+        "id": 2,
+        "title": "Rebecca Gottesman_Ocean Florals_48x48",
+        "value": 500,
+        "stats": {
+            "width": 508,
+            "height": 406,
+            "length": 2
+        },
+        "description": "Rebecca Gottesman_Ocean Florals_48x48",
+        "stackable": true,
+        "rarity": 6,
+        "slug": "Rebecca Gottesman_Ocean Florals_48x48"
+    },
+
+    {
+        "id": 3,
+        "title": "Jane Braddock_Aegean II_60x60",
+        "value": 500,
+        "stats": {
+            "width": 908,
+            "height": 906,
+            "length": 2
+        },
+        "description": "Jane Braddock_Aegean II_60x60",
+        "stackable": true,
+        "rarity": 6,
+        "slug": "Jane Braddock_Aegean II_60x60"
+    }
+
+
+
+
+
+
+
+    
